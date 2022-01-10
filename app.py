@@ -1,5 +1,6 @@
 import streamlit as st
 from transformers import pipeline
+from morpheus import MorpheusHuggingfaceNLI, MorpheusHuggingfaceQA, MorpheusHuggingfaceSummarization
 
 @st.cache(allow_output_mutation=True)
 def load_qa_model():
